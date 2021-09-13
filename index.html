@@ -658,7 +658,7 @@
                 <td class="s0" dir="ltr">Nubaid Islam</td>
                 <td class="s2" dir="ltr">3</td>
                 <td class="s0" dir="ltr">B1</td>
-                <td class="s2" dir="ltr">11/3/2014</td>
+                <td class="s2" dir="ltr">9/13/2014</td>
                 <td class="s0" dir="ltr">01733980507</td>
                 <td class="s0" dir="ltr">Shafiqpharma@yahoo.com</td>
                 <td class="s2" dir="ltr">1/1/2021</td>
@@ -670,7 +670,7 @@
                 <td class="s0" dir="ltr">Namira Nawar</td>
                 <td class="s2" dir="ltr">7</td>
                 <td class="s0" dir="ltr">G2</td>
-                <td class="s2" dir="ltr">1/22/2008</td>
+                <td class="s2" dir="ltr">9/13/2008</td>
                 <td class="s0" dir="ltr">01712634354</td>
                 <td class="s0" dir="ltr">namiranawar30@gmail.com</td>
                 <td class="s2" dir="ltr">1/21/2017</td>
@@ -678,7 +678,35 @@
             </tr>
         </tbody>
     </table>
+<div style="height: 100px;"></div>
+    <!--filters-->
+    <div style="display: flex;flex-wrap: wrap;">
+        <button class="tablink" onclick="openPage('Home', this, '#222121')" style="display: block;">Todays Birthday</button>
+        <button class="tablink" onclick="openPage('News', this, ' #303130')" id="defaultOpen" style="display: block;">Upcoming Birthday</button>
+        <button class="tablink" onclick="openPage('Contact', this, '#373738')" style="display: block;">Previous birthday</button>
+        <button class="tablink" onclick="openPage('About', this, '#555454')" style="display: block;">Info</button>
+    </div>
 
+
+<div id="Home" class="tabcontent">
+  <h3>Todays Birthday</h3>
+  <p id="todaysbday"></p>
+</div>
+
+<div id="News" class="tabcontent">
+  <h3>Upcoming Birthday</h3>
+  <p>Birthdates in this month - <span id="printMonth"></span></p>
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h3>Previous birthday</h3>
+  <p>Get in touch, or swing by for a cup of coffee.</p>
+</div>
+
+<div id="About" class="tabcontent">
+  <h3>all</h3>
+  <p>Who we are and what we do.</p>
+</div>
     <div style="text-align: center; padding-top: 20px;padding-bottom: 20px;">
         <span style="color: #111111e0;">Copyright &copy; </span><h4 style="display: inline;"> <a href="https://www.facebook.com/AUHSELC" style="color: #222222;text-decoration: underline;"> AUHSELC | </a><a href="https://www.facebook.com/ishat.noor.mahi/" style="color: rgba(0, 0, 0, 0.829); text-decoration: underline;">Ishat Noor Mahi</a></h4> | 2021
     </div>
