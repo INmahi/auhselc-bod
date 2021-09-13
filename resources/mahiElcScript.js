@@ -9,7 +9,7 @@
     var currentDate = new Date();
     var dd,mm,yyyy;
     dd = currentDate.getDate();
-    mm = currentDate.getMonth()+1; 
+    mm = currentDate.getMonth()+1;
     yyyy = currentDate.getFullYear();
     //get the date
     var finalDate=`${mm}/${dd}`; //date in mm/dd/yyyy format
@@ -19,7 +19,7 @@
     ];
     var month = monthNames[currentDate.getMonth()];
     var monthfield = document.getElementById('printMonth');
-    monthfield.innerText=month;
+    monthfield.innerText=month+" : ";
     //check BOD
     for(var i=0;i<allTr.length;i++){
         if(i==0||i==1||i==2){
@@ -40,10 +40,10 @@
 
         }
         else{
-           
+
         }
-        var ff = compareBod.slice(0,2)
-        console.log(ff)
+        // var ff = compareBod.slice(0,2)
+        // console.log(ff)
     }
     var todayField = document.getElementById('todaysbday');
     todayField.innerText=today;
@@ -56,19 +56,19 @@
         for (i = 0; i < tabcontent.length; i++) {
           tabcontent[i].style.display = "none";
         }
-      
+
         // Remove the background color of all tablinks/buttons
         tablinks = document.getElementsByClassName("tablink");
         for (i = 0; i < tablinks.length; i++) {
           tablinks[i].style.backgroundColor = "";
         }
-      
+
         // Show the specific tab content
         document.getElementById(pageName).style.display = "block";
-      
+
         // Add the specific color to the button used to open the tab content
         elmnt.style.backgroundColor = color;
       }
-      
+
       // Get the element with id="defaultOpen" and click on it
       document.getElementById("defaultOpen").click();
